@@ -1,0 +1,12 @@
+language: python
+
+addons:
+  sonarcloud:
+    organization: "2019-20-tfg-presencial-febr"
+    token:
+      secure: "YPuDjUtKckLM+3hIN2zXYl0Cob/8kj10cxShEg/WiPBRiXszHA2LG8XnluTZr1o7m0U21/+Y9zY9ap+zDwhxt7Dg9WysoG84AK3dq6vYYoB17IWsYebGQrN1yaY8BnYEkLcXwvqMM3Lx4U2AjxQPs8aADZjkFeOt5YpUpkQlN9GXkN/RTHDUd5adEQ0XyA5fb4O8fm1XEVh9eboGjyrpey9JlkTPPiY3RhGU1YM4EBIb8GtKJZwrZEFxJVo18dErg0Gdx5P0eHih+wPTAopRFboiscIMK3ouhzCAqfx72dlwKcKxqSysoMpbR07Y4X4lYN32UnpxChnDcY2TzXn5W2SkbLVQefMMdCe8NiAAJo6COzewkkCLVi26SIlQ60byksl6YrSGubQstmmtPDG1owuTVruwoFcxWdYEziNScWifrFyDR9rKAhXNfQzKiJdYMYpYbskL2QEmTP1/AOG5WCMbLJ+PNezU0wome+VpPlNnSKlnNrGDVM0CTedYJRTcCx9PJnQ51/CMHiYSAEtYY5Xz0kWi9QzGd5AcgLwBjL6Hzr9UgfnJiqTqvwOJOo5opTTfj+AayLZYAVzzrVsSxPICCLezo4QbBlBkZJqgMkepTvdWzv6w8RQ4DklBIM39HT+mWiQvQR35sLcxDksp4+jH3zizmN00RxaBFE2Sd5c="
+      # encrypted value of your token
+script:
+  # the following command line builds the project, runs the tests with coverage and then execute the SonarCloud analysis
+  - sonar-scanner
+ 
